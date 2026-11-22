@@ -1,0 +1,18 @@
+name: 功能建议
+description: 说明实际使用场景和希望得到的结果。
+title: "[建议] "
+body:
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 使用场景
+      description: 目前处理什么材料，遇到了什么限制？
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: 希望的结果
+      description: 请描述需要的行为或效果；有示意图可以附上。
+    validations:
+      required: true

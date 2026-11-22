@@ -1,0 +1,97 @@
+{
+  "version": "1.0.0",
+  "builtAt": "2026-11-01T08:26:01.160Z",
+  "components": [
+    "compare-bars",
+    "funnel",
+    "trend",
+    "share",
+    "kpi",
+    "media",
+    "chapter",
+    "figures",
+    "matrix",
+    "quote",
+    "flow",
+    "timeline",
+    "versus",
+    "points",
+    "features",
+    "actions",
+    "risks",
+    "people",
+    "testimonial",
+    "table",
+    "roadmap",
+    "tree",
+    "pyramid",
+    "cycle",
+    "venn",
+    "gauge",
+    "treemap",
+    "radar",
+    "sankey",
+    "forces",
+    "diamond"
+  ],
+  "presets": [
+    "keynote-dark",
+    "keynote-light",
+    "journal-dark",
+    "journal-light",
+    "pinboard-dark",
+    "pinboard-light",
+    "isoplan-dark",
+    "isoplan-light"
+  ],
+  "presetMetadata": [
+    {
+      "id": "keynote-dark",
+      "family": "keynote",
+      "familyName": "发布会",
+      "scheme": "dark"
+    },
+    {
+      "id": "keynote-light",
+      "family": "keynote",
+      "familyName": "发布会",
+      "scheme": "light"
+    },
+    {
+      "id": "journal-dark",
+      "family": "journal",
+      "familyName": "杂志报告",
+      "scheme": "dark"
+    },
+    {
+      "id": "journal-light",
+      "family": "journal",
+      "familyName": "杂志报告",
+      "scheme": "light"
+    },
+    {
+      "id": "pinboard-dark",
+      "family": "pinboard",
+      "familyName": "便签拼贴",
+      "scheme": "dark"
+    },
+    {
+      "id": "pinboard-light",
+      "family": "pinboard",
+      "familyName": "便签拼贴",
+      "scheme": "light"
+    },
+    {
+      "id": "isoplan-dark",
+      "family": "isoplan",
+      "familyName": "等轴测图",
+      "scheme": "dark"
+    },
+    {
+      "id": "isoplan-light",
+      "family": "isoplan",
+      "familyName": "等轴测图",
+      "scheme": "light"
+    }
+  ]
+}

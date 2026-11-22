@@ -1,0 +1,193 @@
+{
+  "title": "半山咖啡 · 三季度复盘",
+  "preset": "journal-light",
+  "presets": [
+    "keynote-dark",
+    "keynote-light",
+    "journal-dark",
+    "journal-light",
+    "pinboard-dark",
+    "pinboard-light",
+    "isoplan-dark",
+    "isoplan-light"
+  ],
+  "pages": [
+    {
+      "component": "media",
+      "mode": "cover",
+      "eyebrow": "半山咖啡 · 经营复盘",
+      "title": "增长已兑现\n分化要处理",
+      "body": "三季度五店营收 640 万元，超出目标；但只有三家店达标，五角场需要优先诊断。",
+      "image": {
+        "dark": "assets/img/coffee-dark.jpg",
+        "light": "assets/img/coffee-light.jpg"
+      },
+      "presenter": "运营部 · 王温特",
+      "date": "2026 年 10 月",
+      "venue": "季度经营会"
+    },
+    {
+      "component": "chapter",
+      "eyebrow": "三季度复盘 · 目录",
+      "title": "这次复盘\n回答四个问题",
+      "body": "每一章先给结论，再给数据。",
+      "items": [
+        {
+          "title": "门店分化",
+          "desc": "五家店谁拖了后腿，差多少"
+        },
+        {
+          "title": "小程序漏斗",
+          "desc": "八万多人进来，为什么只剩一万五"
+        },
+        {
+          "title": "会员日",
+          "desc": "增长是真的，归因还要验证"
+        },
+        {
+          "title": "成本结构",
+          "desc": "一杯 15.5 元花在了哪里"
+        }
+      ],
+      "steps": [
+        {
+          "title": "第一章\n门店表现分化"
+        },
+        {
+          "title": "第二章\n小程序转化"
+        },
+        {
+          "title": "第三章\n会员日效果"
+        },
+        {
+          "title": "第四章\n单杯成本"
+        }
+      ]
+    },
+    {
+      "component": "figures",
+      "eyebrow": "经营总览 · 2026 Q3",
+      "title": "总盘达标\n但只有三家店达标",
+      "items": [
+        {
+          "label": "营收合计",
+          "value": "640",
+          "unit": "万元",
+          "delta": "+6.7%",
+          "deltaLabel": "对比目标 600",
+          "tone": "ok",
+          "note": "五家店合计，超出目标 40 万元",
+          "fill": 0.9
+        },
+        {
+          "label": "总杯量",
+          "value": "41.6",
+          "unit": "万杯",
+          "delta": "+39.6%",
+          "deltaLabel": "同比去年",
+          "tone": "ok",
+          "note": "去年同期 29.8 万杯",
+          "fill": 0.8
+        },
+        {
+          "label": "达标门店",
+          "value": "3/5",
+          "unit": "家",
+          "delta": "2 家未达标",
+          "tone": "bad",
+          "note": "五角场差目标 46 万元，最远",
+          "fill": 0.6
+        }
+      ],
+      "steps": [
+        {
+          "title": "营收 640 万\n超出目标",
+          "body": "五家店合计，比目标多 40 万元。"
+        },
+        {
+          "title": "杯量同比\n增长近四成",
+          "body": "增长主要来自会员日上线后的三个月。"
+        },
+        {
+          "title": "但只有三家\n门店达标",
+          "body": "总盘好看，掩盖了门店之间的差距。"
+        },
+        {
+          "title": "总盘达标\n但只有三家店达标",
+          "body": "三个数字放在一起看：增长是真的，分化也是真的。"
+        }
+      ]
+    },
+    {
+      "component": "matrix",
+      "eyebrow": "门店诊断 · 客流 × 客单",
+      "title": "五角场的问题\n在客流不在客单",
+      "axes": {
+        "x": [
+          "客单低",
+          "客单高"
+        ],
+        "y": [
+          "客流低",
+          "客流高"
+        ]
+      },
+      "cells": [
+        {
+          "label": "高客流 · 低客单",
+          "title": "徐家汇",
+          "text": "人多但多是外带美式，套餐渗透低",
+          "tags": [
+            "推套餐"
+          ]
+        },
+        {
+          "label": "高客流 · 高客单",
+          "title": "南京西路 / 陆家嘴",
+          "text": "两家主力店，营收占四成五",
+          "tags": [
+            "保持"
+          ],
+          "tone": "ok"
+        },
+        {
+          "label": "低客流 · 低客单",
+          "title": "五角场",
+          "text": "午后时段空置，离目标差 46 万元",
+          "tags": [
+            "优先诊断"
+          ],
+          "tone": "bad"
+        },
+        {
+          "label": "低客流 · 高客单",
+          "title": "静安寺",
+          "text": "客单最高，但周末客流不足",
+          "tags": [
+            "拉新"
+          ]
+        }
+      ],
+      "order": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "steps": [
+        {
+          "title": "两家主力店\n客流客单都高"
+        },
+        {
+          "title": "徐家汇人多\n但客单偏低"
+        },
+        {
+          "title": "静安寺客单高\n客流不够"
+        },
+        {
+          "title": "五角场两头低\n先诊断它"
+        }
+      ]
+    }
+  ]
+}

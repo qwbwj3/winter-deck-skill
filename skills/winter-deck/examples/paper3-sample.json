@@ -1,0 +1,621 @@
+{
+  "title": "页型样张三 · 新增 2D 页型",
+  "preset": "isoplan-light",
+  "presets": [
+    "keynote-dark",
+    "keynote-light",
+    "journal-dark",
+    "journal-light",
+    "pinboard-dark",
+    "pinboard-light",
+    "isoplan-dark",
+    "isoplan-light"
+  ],
+  "pages": [
+    {
+      "component": "media",
+      "mode": "cover",
+      "eyebrow": "半山咖啡 · 下季度计划",
+      "title": "止住下滑\n再谈扩张",
+      "body": "新增 2D 页型样张：清单、表格、逻辑树、路线图、人物、评价、金字塔、循环、风险、特性、行动。",
+      "image": {
+        "dark": "assets/img/coffee-dark.jpg",
+        "light": "assets/img/coffee-light.jpg"
+      },
+      "presenter": "运营部",
+      "date": "2026 年 10 月"
+    },
+    {
+      "component": "points",
+      "eyebrow": "本次汇报 · 议程",
+      "title": "今天只讲\n四件事",
+      "items": [
+        {
+          "title": "门店分化",
+          "text": "五家店里两家没达标，差距在拉大",
+          "tag": "诊断"
+        },
+        {
+          "title": "营收拆解",
+          "text": "客流、转化、客单，问题出在哪一环",
+          "tag": "拆解"
+        },
+        {
+          "title": "下季度计划",
+          "text": "三条线并行，十二周排期",
+          "tag": "计划"
+        },
+        {
+          "title": "需要决定",
+          "text": "两件事今天要拍板",
+          "tag": "决策",
+          "tone": "bad"
+        }
+      ],
+      "steps": [
+        {
+          "title": "先看\n门店分化"
+        },
+        {
+          "title": "再拆\n营收结构"
+        },
+        {
+          "title": "然后是\n下季度计划"
+        },
+        {
+          "title": "最后\n两件事要拍板"
+        },
+        {
+          "title": "今天只讲\n四件事"
+        }
+      ]
+    },
+    {
+      "component": "table",
+      "eyebrow": "五店 · 三季度关键指标",
+      "title": "五角场三项\n都排最后",
+      "columns": [
+        "门店",
+        "营收（万元）",
+        "客流（千人）",
+        "转化率",
+        "客单（元）"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "南京西路",
+            "186",
+            "62",
+            "38%",
+            "41"
+          ]
+        },
+        {
+          "cells": [
+            "陆家嘴",
+            "152",
+            "55",
+            "35%",
+            "39"
+          ]
+        },
+        {
+          "cells": [
+            "徐家汇",
+            "131",
+            "70",
+            "27%",
+            "30"
+          ]
+        },
+        {
+          "cells": [
+            "静安寺",
+            "97",
+            "31",
+            "34%",
+            "46"
+          ]
+        },
+        {
+          "cells": [
+            "五角场",
+            "74",
+            "35",
+            "24%",
+            "33"
+          ],
+          "tones": [
+            "",
+            "bad",
+            "",
+            "bad",
+            ""
+          ]
+        }
+      ],
+      "highlight": [
+        {
+          "row": 4,
+          "col": 1
+        },
+        {
+          "row": 2,
+          "col": 3
+        }
+      ],
+      "note": "数据为虚构示例",
+      "steps": [
+        {
+          "title": "五店三季度\n关键指标"
+        },
+        {
+          "title": "五角场营收\n只有 74 万元"
+        },
+        {
+          "title": "徐家汇人多\n但转化最低"
+        }
+      ]
+    },
+    {
+      "component": "tree",
+      "eyebrow": "营收拆解 · 五角场",
+      "title": "缺口拆到底\n是转化的问题",
+      "operator": "=",
+      "root": {
+        "label": "季度营收",
+        "value": "74 万元",
+        "children": [
+          {
+            "label": "客流",
+            "value": "3.5 万人",
+            "children": [
+              {
+                "label": "工作日",
+                "value": "2.1 万"
+              },
+              {
+                "label": "周末",
+                "value": "1.4 万"
+              }
+            ]
+          },
+          {
+            "label": "转化率",
+            "value": "24%",
+            "children": [
+              {
+                "label": "进店到点单",
+                "value": "31%"
+              },
+              {
+                "label": "点单到复购",
+                "value": "12%"
+              }
+            ]
+          },
+          {
+            "label": "客单价",
+            "value": "33 元",
+            "children": [
+              {
+                "label": "套餐占比",
+                "value": "18%"
+              }
+            ]
+          }
+        ]
+      },
+      "focus": 1,
+      "steps": [
+        {
+          "title": "先看总数\n营收 74 万"
+        },
+        {
+          "title": "拆成三个因子\n客流 × 转化 × 客单"
+        },
+        {
+          "title": "再往下拆\n一层"
+        },
+        {
+          "title": "问题集中在\n转化这一支"
+        }
+      ]
+    },
+    {
+      "component": "roadmap",
+      "eyebrow": "下季度 · 十二周排期",
+      "title": "三条线\n并行推进",
+      "periods": [
+        "第1周",
+        "第2周",
+        "第3周",
+        "第4周",
+        "第5周",
+        "第6周",
+        "第7周",
+        "第8周",
+        "第9周",
+        "第10周",
+        "第11周",
+        "第12周"
+      ],
+      "lanes": [
+        {
+          "name": "门店诊断",
+          "items": [
+            {
+              "label": "补数据",
+              "start": 0,
+              "end": 2
+            },
+            {
+              "label": "排班调整",
+              "start": 2,
+              "end": 5
+            },
+            {
+              "label": "复盘",
+              "start": 5,
+              "end": 6,
+              "tone": "ok"
+            }
+          ]
+        },
+        {
+          "name": "会员运营",
+          "items": [
+            {
+              "label": "对照试验设计",
+              "start": 1,
+              "end": 3
+            },
+            {
+              "label": "会员日对照",
+              "start": 3,
+              "end": 9
+            }
+          ]
+        },
+        {
+          "name": "成本优化",
+          "items": [
+            {
+              "label": "租约谈判",
+              "start": 0,
+              "end": 4,
+              "tone": "bad"
+            },
+            {
+              "label": "采购比价",
+              "start": 4,
+              "end": 8
+            },
+            {
+              "label": "落地",
+              "start": 8,
+              "end": 12
+            }
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "title": "门店诊断\n前六周完成"
+        },
+        {
+          "title": "会员日对照\n跑满六周"
+        },
+        {
+          "title": "租约谈判\n是风险点"
+        },
+        {
+          "title": "三条线\n并行推进"
+        }
+      ]
+    },
+    {
+      "component": "pyramid",
+      "eyebrow": "经营优先级",
+      "title": "先保底\n再增长",
+      "levels": [
+        {
+          "title": "扩张",
+          "text": "新开门店"
+        },
+        {
+          "title": "增长",
+          "text": "会员日、套餐"
+        },
+        {
+          "title": "效率",
+          "text": "排班、采购"
+        },
+        {
+          "title": "保底",
+          "text": "现金流和租约"
+        }
+      ],
+      "steps": [
+        {
+          "title": "最底层\n先守住现金流"
+        },
+        {
+          "title": "然后\n提效率"
+        },
+        {
+          "title": "再做\n增长"
+        },
+        {
+          "title": "最后\n才谈扩张"
+        }
+      ]
+    },
+    {
+      "component": "cycle",
+      "eyebrow": "会员增长飞轮",
+      "title": "会员越多\n复购越稳",
+      "center": "会员飞轮",
+      "items": [
+        {
+          "title": "会员日拉新",
+          "text": "第二杯半价"
+        },
+        {
+          "title": "首单体验",
+          "text": "新品试饮"
+        },
+        {
+          "title": "复购",
+          "text": "积分换购"
+        },
+        {
+          "title": "口碑推荐",
+          "text": "老带新返券"
+        }
+      ],
+      "steps": [
+        {
+          "title": "会员日\n负责拉新"
+        },
+        {
+          "title": "首单体验\n决定留不留"
+        },
+        {
+          "title": "复购\n靠积分"
+        },
+        {
+          "title": "口碑\n带来新会员"
+        },
+        {
+          "title": "转起来\n就是飞轮"
+        }
+      ]
+    },
+    {
+      "component": "matrix",
+      "template": "swot",
+      "eyebrow": "五角场 · SWOT",
+      "title": "有客流基础\n缺转化抓手",
+      "cells": [
+        {
+          "title": "高校客流",
+          "text": "周边三所大学"
+        },
+        {
+          "title": "转化偏低",
+          "text": "进店到点单 31%"
+        },
+        {
+          "title": "外卖增长",
+          "text": "午后时段空置"
+        },
+        {
+          "title": "新店竞争",
+          "text": "500 米内两家"
+        }
+      ],
+      "steps": [
+        {
+          "title": "优势\n是高校客流"
+        },
+        {
+          "title": "劣势\n是转化偏低"
+        },
+        {
+          "title": "机会\n在外卖"
+        },
+        {
+          "title": "威胁\n是新店竞争"
+        }
+      ]
+    },
+    {
+      "component": "risks",
+      "eyebrow": "下季度 · 风险",
+      "title": "最大的风险\n是租约",
+      "items": [
+        {
+          "risk": "五角场租约到期涨价",
+          "impact": "high",
+          "likelihood": "可能性高",
+          "action": "提前两个月谈续约，备选两个铺位"
+        },
+        {
+          "risk": "会员日补贴超预算",
+          "impact": "mid",
+          "likelihood": "可能性中",
+          "action": "设单月上限，超了自动停"
+        },
+        {
+          "risk": "排班调整引起离职",
+          "impact": "mid",
+          "likelihood": "可能性低",
+          "action": "先和店长沟通，按意愿排"
+        }
+      ],
+      "steps": [
+        {
+          "title": "最大的风险\n是租约"
+        },
+        {
+          "title": "补贴要\n设上限"
+        },
+        {
+          "title": "排班调整\n先沟通"
+        }
+      ]
+    },
+    {
+      "component": "people",
+      "eyebrow": "项目分工",
+      "title": "三个人\n各管一条线",
+      "items": [
+        {
+          "name": "陈晓",
+          "role": "门店诊断",
+          "text": "运营经理，负责五角场"
+        },
+        {
+          "name": "李然",
+          "role": "会员运营",
+          "text": "负责会员日对照试验"
+        },
+        {
+          "name": "王越",
+          "role": "成本优化",
+          "text": "财务，负责租约和采购"
+        }
+      ],
+      "steps": [
+        {
+          "title": "陈晓\n负责门店诊断"
+        },
+        {
+          "title": "李然\n负责会员运营"
+        },
+        {
+          "title": "王越\n负责成本"
+        }
+      ]
+    },
+    {
+      "component": "testimonial",
+      "eyebrow": "顾客怎么说",
+      "title": "顾客的原话",
+      "items": [
+        {
+          "quote": "中午过来**排队太久**，常常就走了。",
+          "name": "林同学",
+          "role": "附近高校学生"
+        },
+        {
+          "quote": "会员日很划算，**但平时不太想来**。",
+          "name": "周女士",
+          "role": "会员三个月"
+        }
+      ],
+      "steps": [
+        {
+          "title": "午高峰\n排队劝退"
+        },
+        {
+          "title": "会员日之外\n缺理由来"
+        }
+      ]
+    },
+    {
+      "component": "features",
+      "eyebrow": "新会员体系 · 六项能力",
+      "title": "会员体系\n六项能力",
+      "items": [
+        {
+          "icon": "券",
+          "title": "自动发券",
+          "text": "按消费频次发"
+        },
+        {
+          "icon": "积",
+          "title": "积分换购",
+          "text": "杯数换新品"
+        },
+        {
+          "icon": "推",
+          "title": "老带新",
+          "text": "双方各得一张券"
+        },
+        {
+          "icon": "生",
+          "title": "生日礼",
+          "text": "生日当周免费一杯"
+        },
+        {
+          "icon": "约",
+          "title": "预约取餐",
+          "text": "午高峰不排队"
+        },
+        {
+          "icon": "报",
+          "title": "周报",
+          "text": "店长每周看数据"
+        }
+      ],
+      "highlight": [
+        4,
+        2
+      ],
+      "steps": [
+        {
+          "title": "新会员体系\n六项能力"
+        },
+        {
+          "title": "预约取餐\n解决排队"
+        },
+        {
+          "title": "老带新\n解决拉新"
+        }
+      ]
+    },
+    {
+      "component": "actions",
+      "eyebrow": "下一步",
+      "title": "今天要定的事",
+      "ask": "批准五角场 12 周诊断方案，预算 8 万元",
+      "items": [
+        {
+          "action": "启动五角场诊断",
+          "detail": "补齐分时段数据",
+          "owner": "陈晓",
+          "due": "11 月 3 日"
+        },
+        {
+          "action": "会员日对照试验",
+          "detail": "五角场试点，徐家汇对照",
+          "owner": "李然",
+          "due": "11 月 10 日"
+        },
+        {
+          "action": "租约续约谈判",
+          "detail": "同步看两个备选铺位",
+          "owner": "王越",
+          "due": "11 月 30 日"
+        }
+      ],
+      "steps": [
+        {
+          "title": "第一件\n启动诊断"
+        },
+        {
+          "title": "第二件\n对照试验"
+        },
+        {
+          "title": "第三件\n谈租约"
+        },
+        {
+          "title": "请今天\n批准方案"
+        }
+      ]
+    }
+  ]
+}

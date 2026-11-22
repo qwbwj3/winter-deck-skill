@@ -1,0 +1,9 @@
+{
+  "name": "winter-deck",
+  "description": "只填数据即可制作可编辑的 HTML 演示，内含 31 个页型与 8 个风格预设。",
+  "version": "1.0.0",
+  "author": {
+    "name": "王温特"
+  },
+  "license": "MIT"
+}

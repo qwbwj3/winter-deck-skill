@@ -1,0 +1,93 @@
+{
+  "id": "keynote-light",
+  "name": "发布会 · 浅色",
+  "_source": "发布会构图：固定深浅背景、线性参数列表与普惠体大字。非当前文字保持可读，不以透明度压暗。",
+  "colors": {
+    "bg": "#FBFBFD",
+    "surface": "#FBFBFD",
+    "surface2": "#F0F0F3",
+    "sep": "#D2D2D7",
+    "ink": "#1D1D1F",
+    "muted": "#68686F",
+    "dim": "#73737C",
+    "neutral": "#8E8E93",
+    "ok": "#34C759",
+    "bad": "#FF8D28",
+    "accent": "#0071E3",
+    "quiet": "#73737C",
+    "ghost": "#73737C",
+    "target": "#0088FF",
+    "grid": "#8E8E93",
+    "ring": "#0088FF",
+    "spot": "#FFFFFF",
+    "dust": "#8E8E93",
+    "shadow": "rgba(255,255,255,.75)",
+    "badSoft": "rgba(255,141,40,.14)",
+    "okName": "绿色",
+    "badName": "橙色"
+  },
+  "material": {
+    "color": "#FFFFFF",
+    "metalness": 0.0,
+    "roughness": 0.36,
+    "clearcoat": 0.25,
+    "rim": 0.12,
+    "sheen": 0.0,
+    "base": 0.0,
+    "grad": 0.18,
+    "glow": 1,
+    "capBoost": 1.0,
+    "tint": 1.0,
+    "emis": 0.07
+  },
+  "floor": {
+    "color": "#FBFBFD",
+    "metalness": 0.0,
+    "roughness": 0.5,
+    "reflection": 0,
+    "grid": 0,
+    "ring": 0,
+    "spot": 0,
+    "env": 0.35
+  },
+  "light": {
+    "env": 0.75,
+    "key": "#FFFFFF",
+    "keyIntensity": 1.35,
+    "exposure": 1.0,
+    "fog": 0.02,
+    "vignette": 0,
+    "textMask": 0.5,
+    "shadows": false,
+    "toneMapping": "none",
+    "ink": true
+  },
+  "bloom": {
+    "strength": 0,
+    "radius": 0.3,
+    "threshold": 0.95
+  },
+  "image": {
+    "grade": 0.0,
+    "shotDim": 1.0
+  },
+  "motion": {
+    "camK": 9,
+    "barK": 70,
+    "barZ": 0.64,
+    "dust": 0
+  },
+  "type": {
+    "titleSize": 110,
+    "titleWeight": 900
+  },
+  "scheme": "light",
+  "family": "keynote",
+  "familyName": "发布会",
+  "shape": {
+    "radius": 0,
+    "chipRadius": 0
+  },
+  "compose": "keynote",
+  "baseFamily": "ios"
+}

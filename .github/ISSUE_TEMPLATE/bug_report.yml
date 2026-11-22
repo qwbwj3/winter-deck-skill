@@ -1,0 +1,35 @@
+name: 问题反馈
+description: 提交可复现的问题，方便定位并修复。
+title: "[问题] "
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: 系统与浏览器
+      description: 请填写操作系统、Node 版本，以及浏览器名称和版本。
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Agent 名称
+      placeholder: 例如 Claude Code、Codex
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 请说明运行的命令、预期结果和实际结果。
+    validations:
+      required: true
+  - type: textarea
+    id: deck
+    attributes:
+      label: deck JSON 附件说明
+      description: 请先移除个人信息和商业机密，再拖入 JSON；无法上传时可压缩为 ZIP，并注明所需图片。
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: 截图
+      description: 可拖入问题截图；请遮住个人信息和机密。

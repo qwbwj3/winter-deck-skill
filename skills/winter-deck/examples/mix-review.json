@@ -1,0 +1,212 @@
+{
+  "preset": "journal-light",
+  "pages": [
+    {
+      "component": "media",
+      "mode": "cover",
+      "image": {
+        "dark": "assets/img/stamping-wide.jpg",
+        "light": "assets/img/stamping-wide-day.jpg"
+      },
+      "eyebrow": "三号厂区 · 2026 年三季度经营复盘",
+      "title": "效率丢在哪里\n就从哪里找回来",
+      "body": "制造中心 · 运营管理部",
+      "meta": "2026 年 10 月 · 内部汇报"
+    },
+    {
+      "component": "media",
+      "mode": "reading",
+      "eyebrow": "这次复盘要回答的三个问题",
+      "title": "先把问题问对",
+      "paragraphs": [
+        {
+          "text": "第一，六条产线里，**谁拖了整体的后腿**？过去我们只盯产量，产量达标掩盖了大量看不见的停机。",
+          "image": {
+            "dark": "assets/img/stamping-wide.jpg",
+            "light": "assets/img/stamping-wide-day.jpg"
+          }
+        },
+        {
+          "text": "第二，拖后腿的那条线，**时间到底丢在了哪一环**？这需要把设备综合效率拆开，一项一项看。",
+          "image": {
+            "dark": "assets/img/die-timer.jpg",
+            "light": "assets/img/die-timer-day.jpg"
+          }
+        },
+        {
+          "text": "第三，**先改哪里最划算**？资源有限，我们只挑一个突破口，要求三个月内见到效果。",
+          "image": {
+            "dark": "assets/img/die-clamp.jpg",
+            "light": "assets/img/die-clamp-day.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "component": "compare-bars",
+      "eyebrow": "三号厂区 · 2026 年三季度 · 设备综合效率 OEE",
+      "unit": "%",
+      "diffUnit": "点",
+      "max": 100,
+      "maxLabel": "满负荷",
+      "target": {
+        "value": 85,
+        "label": "目标"
+      },
+      "passLabel": "达标",
+      "failLabel": "未达标",
+      "focus": "auto",
+      "items": [
+        {
+          "code": "L1",
+          "name": "焊装",
+          "value": 90.3
+        },
+        {
+          "code": "L2",
+          "name": "涂装",
+          "value": 86.6
+        },
+        {
+          "code": "L3",
+          "name": "总装",
+          "value": 90.7
+        },
+        {
+          "code": "L4",
+          "name": "冲压",
+          "value": 60.8,
+          "A": 72,
+          "P": 88,
+          "Q": 96,
+          "breakdown": [
+            {
+              "name": "停机损失",
+              "value": 28
+            },
+            {
+              "name": "速度损失",
+              "value": 8.6
+            },
+            {
+              "name": "不良损失",
+              "value": 2.5
+            }
+          ]
+        },
+        {
+          "code": "L5",
+          "name": "机加",
+          "value": 80.3
+        },
+        {
+          "code": "L6",
+          "name": "注塑",
+          "value": 89.8
+        }
+      ],
+      "steps": [
+        {
+          "title": "{n} 条产线，{pass} 条达标",
+          "body": "三季度各产线的设备综合效率（OEE）：开机时间里，真正产出合格品的比例。"
+        },
+        {
+          "title": "{focus.code} {focus.name}线\n比目标低 {gap} 个点",
+          "body": "目标线 {target}%：够到的标{okName}，没够到的标{badName}。",
+          "legend": true
+        },
+        {
+          "title": "{focus.name}线丢掉的效率\n{top.share}% 是{top.name}",
+          "body": "其他产线退场，把{focus.name}线的缺口按三类损失拆开。",
+          "chips": [
+            "可用率 {focus.A}%",
+            "×",
+            "性能率 {focus.P}%",
+            "×",
+            "良品率 {focus.Q}%",
+            "="
+          ],
+          "result": "OEE {focus.value}%"
+        }
+      ],
+      "breakdownBase": "max"
+    },
+    {
+      "component": "media",
+      "mode": "evidence",
+      "image": "assets/img/mes-downtime.png",
+      "aspect": 1.951,
+      "eyebrow": "证据 · 设备管理系统停机记录",
+      "title": "停机记录里\n换模占了一半以上",
+      "body": "三季度 L4 冲压线停机 214 次、186 小时，其中换模 54%，平均每次 48 分钟。",
+      "points": [
+        "原样截图，未做任何修改"
+      ],
+      "caption": "示意截图 · 停机记录（L4 冲压线）",
+      "focus": {
+        "x": 0.13,
+        "y": 0.228,
+        "w": 0.865,
+        "h": 0.132
+      }
+    },
+    {
+      "component": "media",
+      "mode": "gallery",
+      "eyebrow": "换模现场",
+      "title": "48 分钟\n花在这四个动作上",
+      "body": "按一下看一步：每一步都还有压缩空间。",
+      "images": [
+        {
+          "image": {
+            "dark": "assets/img/die-lift.jpg",
+            "light": "assets/img/die-lift-day.jpg"
+          },
+          "caption": "① 吊出旧模具 · 约 14 分钟"
+        },
+        {
+          "image": {
+            "dark": "assets/img/die-align.jpg",
+            "light": "assets/img/die-align-day.jpg"
+          },
+          "caption": "② 对正新模具 · 约 16 分钟"
+        },
+        {
+          "image": {
+            "dark": "assets/img/die-clamp.jpg",
+            "light": "assets/img/die-clamp-day.jpg"
+          },
+          "caption": "③ 夹紧锁模 · 约 10 分钟"
+        },
+        {
+          "image": {
+            "dark": "assets/img/die-timer.jpg",
+            "light": "assets/img/die-timer-day.jpg"
+          },
+          "caption": "④ 首件确认 · 约 8 分钟"
+        }
+      ]
+    },
+    {
+      "component": "media",
+      "mode": "photo",
+      "image": {
+        "dark": "assets/img/stamping-wide.jpg",
+        "light": "assets/img/stamping-wide-day.jpg"
+      },
+      "eyebrow": "下一步",
+      "title": "把换模时间\n砍掉一半",
+      "body": "在 L4 试点快速换模：三个月内，单次换模从 48 分钟降到 24 分钟。"
+    }
+  ],
+  "presets": [
+    "keynote-dark",
+    "keynote-light",
+    "journal-dark",
+    "journal-light",
+    "pinboard-dark",
+    "pinboard-light",
+    "isoplan-dark",
+    "isoplan-light"
+  ]
+}

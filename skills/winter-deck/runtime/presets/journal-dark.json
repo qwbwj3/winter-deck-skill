@@ -1,0 +1,89 @@
+{
+  "id": "journal-dark",
+  "name": "杂志报告 · 深色",
+  "_source": "暖炭黑底、米白字、浅朱红强调；研究报告线框与轻数字",
+  "colors": {
+    "bg": "#1A1916",
+    "surface": "#1A1916",
+    "surface2": "#302D27",
+    "sep": "#3A362F",
+    "ink": "#EEE8DC",
+    "muted": "#ABA294",
+    "dim": "#958C7D",
+    "neutral": "#B8AFA0",
+    "ok": "#5FBF8A",
+    "bad": "#F0684A",
+    "accent": "#E0735C",
+    "quiet": "#8E8678",
+    "ghost": "#8E8678",
+    "target": "#E0735C",
+    "grid": "#4A4339",
+    "ring": "#E0735C",
+    "spot": "#3A342B",
+    "dust": "#8E8678",
+    "shadow": "rgba(0,0,0,.5)",
+    "badSoft": "rgba(240,104,74,.14)",
+    "okName": "绿色",
+    "badName": "红色"
+  },
+  "material": {
+    "color": "#5A4B3C",
+    "metalness": 0.0,
+    "roughness": 0.7,
+    "clearcoat": 0.1,
+    "rim": 0.32,
+    "sheen": 0.1,
+    "base": 0.03,
+    "grad": 0.5,
+    "glow": 0.85,
+    "capBoost": 1.3
+  },
+  "floor": {
+    "color": "#1A1916",
+    "metalness": 0.0,
+    "roughness": 0.7,
+    "reflection": 0.06,
+    "grid": 0.15,
+    "ring": 0.2,
+    "spot": 0,
+    "env": 0.25
+  },
+  "light": {
+    "env": 0.55,
+    "key": "#FFFFFF",
+    "keyIntensity": 1.25,
+    "exposure": 1.0,
+    "fog": 0.02,
+    "vignette": 0.0,
+    "textMask": 0.0,
+    "toneMapping": "none"
+  },
+  "bloom": {
+    "strength": 0.0,
+    "radius": 0.5,
+    "threshold": 0.86
+  },
+  "image": {
+    "grade": 0.1,
+    "shotDim": 0.92
+  },
+  "motion": {
+    "camK": 9,
+    "barK": 70,
+    "barZ": 0.64,
+    "dust": 0
+  },
+  "type": {
+    "titleSize": 62,
+    "titleWeight": 800
+  },
+  "scheme": "dark",
+  "family": "journal",
+  "familyName": "杂志报告",
+  "shape": {
+    "radius": 0,
+    "chipRadius": 0
+  },
+  "compose": "journal",
+  "baseFamily": "paper"
+}

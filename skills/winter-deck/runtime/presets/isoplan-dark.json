@@ -1,0 +1,101 @@
+{
+  "id": "isoplan-dark",
+  "name": "等轴测图 · 深色",
+  "_source": "原创方向；以00_设计/风格调研/概念样片中的同名HTML为视觉依据。",
+  "colors": {
+    "bg": "#15191C",
+    "surface": "#303A41",
+    "surface2": "#414B52",
+    "sep": "#B7C1C7",
+    "ink": "#E6EAEC",
+    "muted": "#B7C1C7",
+    "dim": "#B7C1C7",
+    "neutral": "#A7B5BE",
+    "ok": "#F08A48",
+    "bad": "#F08A48",
+    "accent": "#F08A48",
+    "quiet": "#B7C1C7",
+    "ghost": "#B7C1C7",
+    "target": "#F08A48",
+    "grid": "#B7C1C7",
+    "ring": "#F08A48",
+    "spot": "#15191C",
+    "dust": "#C5CED0",
+    "shadow": "rgba(0,0,0,.24)",
+    "badSoft": "rgba(0,0,0,.08)",
+    "okName": "达标",
+    "badName": "未达标"
+  },
+  "material": {
+    "color": "#A7B5BE",
+    "metalness": 0,
+    "roughness": 1,
+    "clearcoat": 0,
+    "rim": 0,
+    "sheen": 0,
+    "base": 0,
+    "grad": 0,
+    "glow": 0,
+    "capBoost": 1,
+    "tint": 1,
+    "emis": 0
+  },
+  "floor": {
+    "color": "#15191C",
+    "metalness": 0,
+    "roughness": 1,
+    "reflection": 1,
+    "grid": 0,
+    "ring": 0,
+    "spot": 0,
+    "env": 0,
+    "mode": "matte"
+  },
+  "light": {
+    "env": 0.85,
+    "key": "#FFFFFF",
+    "keyIntensity": 2.2,
+    "exposure": 1,
+    "fog": 0,
+    "vignette": 0,
+    "textMask": 0,
+    "shadows": true,
+    "toneMapping": "none",
+    "ink": false
+  },
+  "bloom": {
+    "strength": 0,
+    "radius": 0.3,
+    "threshold": 1
+  },
+  "image": {
+    "grade": 0,
+    "shotDim": 1
+  },
+  "motion": {
+    "camK": 9,
+    "barK": 70,
+    "barZ": 0.64,
+    "dust": 0
+  },
+  "type": {
+    "titleSize": 64,
+    "titleWeight": 900
+  },
+  "scheme": "dark",
+  "family": "isoplan",
+  "familyName": "等轴测图",
+  "shape": {
+    "radius": 0,
+    "chipRadius": 0
+  },
+  "render": {
+    "direction": "iso",
+    "toon3": true
+  },
+  "camera": {
+    "iso": true
+  },
+  "compose": "isoplan",
+  "baseFamily": "iso"
+}

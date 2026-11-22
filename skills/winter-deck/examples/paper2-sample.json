@@ -1,0 +1,193 @@
+{
+  "title": "半山咖啡 · 三季度复盘",
+  "preset": "pinboard-light",
+  "presets": [
+    "keynote-dark",
+    "keynote-light",
+    "journal-dark",
+    "journal-light",
+    "pinboard-dark",
+    "pinboard-light",
+    "isoplan-dark",
+    "isoplan-light"
+  ],
+  "pages": [
+    {
+      "component": "media",
+      "mode": "cover",
+      "eyebrow": "半山咖啡 · 经营复盘",
+      "title": "下季度\n先做三件事",
+      "body": "五角场诊断、会员日对照试验、排班按客流重排。",
+      "image": {
+        "dark": "assets/img/coffee-dark.jpg",
+        "light": "assets/img/coffee-light.jpg"
+      },
+      "presenter": "运营部",
+      "date": "2026 年 10 月"
+    },
+    {
+      "component": "flow",
+      "eyebrow": "五角场 · 四周诊断",
+      "title": "四周诊断\n每周只做一件事",
+      "items": [
+        {
+          "title": "补数据",
+          "desc": "客流、客单、分时段销量，按天拉齐",
+          "owner": "数据组",
+          "tags": [
+            "第 1 周"
+          ]
+        },
+        {
+          "title": "调排班",
+          "desc": "午后低峰减一人，早高峰加一人",
+          "owner": "店长",
+          "tags": [
+            "第 2 周"
+          ]
+        },
+        {
+          "title": "测套餐",
+          "desc": "午后套餐对照测试，看到店转化",
+          "owner": "运营",
+          "tags": [
+            "第 3 周"
+          ]
+        },
+        {
+          "title": "做决定",
+          "desc": "看贡献利润，决定保留、缩时或迁址",
+          "owner": "管理层",
+          "tags": [
+            "第 4 周"
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "title": "第一周\n先把数据补齐",
+          "body": "没有分时段数据，所有判断都是猜。"
+        },
+        {
+          "title": "第二周\n按客流调排班",
+          "body": "低峰减人、高峰加人，人力成本不增。"
+        },
+        {
+          "title": "第三周\n测午后套餐",
+          "body": "只在五角场测，其他店做对照。"
+        },
+        {
+          "title": "第四周\n用利润做决定",
+          "body": "看贡献利润，不只看营收。"
+        }
+      ]
+    },
+    {
+      "component": "quote",
+      "eyebrow": "这次复盘最重要的一句话",
+      "lines": [
+        "总盘达标的时候，",
+        "最容易看不见",
+        "**正在掉队的那家店**。"
+      ],
+      "by": "运营部 · 三季度复盘"
+    },
+    {
+      "component": "timeline",
+      "eyebrow": "会员日 · 上线以来",
+      "title": "会员日上线\n四个月的变化",
+      "items": [
+        {
+          "date": "6 月",
+          "title": "会员日上线",
+          "desc": "每周三第二杯半价",
+          "tag": "起点"
+        },
+        {
+          "date": "7 月",
+          "title": "会员破 4.6 万",
+          "desc": "月净增 0.7 万，上线前的 3 倍",
+          "tag": "+0.7 万",
+          "tone": "ok"
+        },
+        {
+          "date": "8 月",
+          "title": "复购开始回落",
+          "desc": "新会员第二个月复购率低于老会员",
+          "tag": "要盯",
+          "tone": "bad"
+        },
+        {
+          "date": "9 月",
+          "title": "会员 5.7 万",
+          "desc": "增速放缓，需要做对照验证效果",
+          "tag": "下一步"
+        }
+      ],
+      "steps": [
+        {
+          "title": "6 月上线\n第二杯半价"
+        },
+        {
+          "title": "7 月净增\n是上线前的 3 倍"
+        },
+        {
+          "title": "8 月复购\n开始回落"
+        },
+        {
+          "title": "9 月增速放缓\n要做对照"
+        }
+      ]
+    },
+    {
+      "component": "versus",
+      "eyebrow": "排班方案 · 五角场",
+      "title": "按客流排班\n人不加、成本降",
+      "a": {
+        "label": "现在",
+        "title": "固定排班",
+        "desc": "全天 4 人，不分高低峰"
+      },
+      "b": {
+        "label": "调整后",
+        "title": "按客流排班",
+        "desc": "早高峰 5 人，午后 3 人"
+      },
+      "mid": "对比",
+      "rows": [
+        {
+          "label": "日均工时",
+          "a": "40 小时",
+          "b": "38 小时",
+          "better": "b"
+        },
+        {
+          "label": "早高峰等待",
+          "a": "6 分钟",
+          "b": "3 分钟",
+          "better": "b"
+        },
+        {
+          "label": "单杯人工",
+          "a": "3.8 元",
+          "b": "3.4 元",
+          "better": "b"
+        }
+      ],
+      "steps": [
+        {
+          "title": "现在全天\n固定 4 个人",
+          "body": "午后客流只有早高峰的三分之一。"
+        },
+        {
+          "title": "调整后\n跟着客流排人",
+          "body": "总工时不增加，只是挪了位置。"
+        },
+        {
+          "title": "工时少两小时\n等待减半",
+          "body": "单杯人工从 3.8 元降到 3.4 元（测算）。"
+        }
+      ]
+    }
+  ]
+}

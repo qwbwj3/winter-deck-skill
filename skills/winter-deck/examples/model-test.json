@@ -1,0 +1,519 @@
+{
+  "title": "页型样张三 · 新增 2D 页型",
+  "preset": "keynote-dark",
+  "presets": [
+    "keynote-dark",
+    "keynote-light",
+    "journal-dark",
+    "journal-light",
+    "pinboard-dark",
+    "pinboard-light",
+    "isoplan-dark",
+    "isoplan-light"
+  ],
+  "pages": [
+    {
+      "component": "media",
+      "mode": "cover",
+      "eyebrow": "半山咖啡 · 下季度计划",
+      "title": "止住下滑\n再谈扩张",
+      "body": "新增 2D 页型样张：清单、表格、逻辑树、路线图、人物、评价、金字塔、循环、风险、特性、行动。",
+      "image": {
+        "dark": "assets/img/coffee-dark.jpg",
+        "light": "assets/img/coffee-light.jpg"
+      },
+      "presenter": "运营部",
+      "date": "2026 年 10 月"
+    },
+    {
+      "component": "venn",
+      "eyebrow": "选址判断",
+      "en": "Site Fit",
+      "title": "三条都占才开店",
+      "sets": [
+        {
+          "label": "客流",
+          "text": "午间步行客流 ≥ 800 人/时"
+        },
+        {
+          "label": "租金",
+          "text": "租售比 ≤ 15%"
+        },
+        {
+          "label": "人群",
+          "text": "25～40 岁上班族占六成"
+        }
+      ],
+      "overlaps": {
+        "12": "便宜但冷清",
+        "01": "热闹但贵",
+        "02": "人多不对路"
+      },
+      "center": {
+        "short": "可开",
+        "title": "陆家嘴、南京西路",
+        "text": "三项同时达标的只有两处候选点"
+      },
+      "centerLabel": "三者交集",
+      "steps": [
+        {
+          "title": "先看==客流=="
+        },
+        {
+          "title": "再看租金"
+        },
+        {
+          "title": "最后看人群"
+        },
+        {
+          "title": "三条都占的\n只有==两处=="
+        }
+      ],
+      "takeaway": "新店只在交集里选"
+    },
+    {
+      "component": "venn",
+      "eyebrow": "会员策略",
+      "en": "Member Overlap",
+      "title": "高频客和高客单\n是两拨人",
+      "sets": [
+        {
+          "label": "高频客",
+          "text": "每周来 3 次以上"
+        },
+        {
+          "label": "高客单",
+          "text": "单次消费 60 元以上"
+        }
+      ],
+      "overlaps": {},
+      "center": {
+        "short": "8%",
+        "title": "两者都是的只占 8%",
+        "text": "会员权益要分开设计"
+      },
+      "steps": [
+        {
+          "title": "高频客"
+        },
+        {
+          "title": "高客单"
+        },
+        {
+          "title": "重合的只有 ==8%=="
+        }
+      ]
+    },
+    {
+      "component": "gauge",
+      "eyebrow": "季度目标",
+      "en": "Quarter Goals",
+      "title": "三项指标\n只有一项达标",
+      "max": 100,
+      "items": [
+        {
+          "label": "营收完成率",
+          "value": 92,
+          "unit": "%",
+          "target": 100,
+          "text": "五店合计 640 万"
+        },
+        {
+          "label": "会员复购率",
+          "value": 41,
+          "unit": "%",
+          "target": 35,
+          "tone": "ok",
+          "text": "超目标 6 个点"
+        },
+        {
+          "label": "小程序转化",
+          "value": 18,
+          "unit": "%",
+          "target": 25,
+          "tone": "bad",
+          "text": "离目标差 7 个点"
+        }
+      ],
+      "steps": [
+        {
+          "title": "营收完成 92%"
+        },
+        {
+          "title": "复购==超目标=="
+        },
+        {
+          "title": "转化差得最远"
+        },
+        {
+          "title": "三项指标\n只有一项达标"
+        }
+      ],
+      "takeaway": "下季度重点盯小程序转化",
+      "accent": "ok"
+    },
+    {
+      "component": "matrix",
+      "template": "bcg",
+      "eyebrow": "产品组合",
+      "en": "BCG Matrix",
+      "title": "拿铁养家\n新品要选",
+      "cells": [
+        {
+          "title": "燕麦拿铁",
+          "text": "增长 40%，份额第一",
+          "tags": [
+            "加大投入"
+          ]
+        },
+        {
+          "title": "冷萃",
+          "text": "增长快，份额只有 6%",
+          "tags": [
+            "再测一季"
+          ]
+        },
+        {
+          "title": "美式",
+          "text": "份额最高，增长停了",
+          "tags": [
+            "守住利润"
+          ]
+        },
+        {
+          "title": "果茶",
+          "text": "增长和份额都低",
+          "tags": [
+            "下架"
+          ]
+        }
+      ],
+      "order": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "steps": [
+        {
+          "title": "美式是现金牛"
+        },
+        {
+          "title": "燕麦拿铁是==明星=="
+        },
+        {
+          "title": "冷萃还是问号"
+        },
+        {
+          "title": "果茶该下架"
+        }
+      ]
+    },
+    {
+      "component": "treemap",
+      "eyebrow": "营收构成",
+      "en": "Revenue Mix",
+      "title": "咖啡撑起六成营收",
+      "items": [
+        {
+          "label": "咖啡饮品",
+          "value": 386,
+          "unit": "万",
+          "text": "拿铁占一半"
+        },
+        {
+          "label": "茶饮",
+          "value": 92,
+          "unit": "万"
+        },
+        {
+          "label": "烘焙",
+          "value": 74,
+          "unit": "万",
+          "text": "早餐时段为主"
+        },
+        {
+          "label": "咖啡豆零售",
+          "value": 46,
+          "unit": "万"
+        },
+        {
+          "label": "周边",
+          "value": 22,
+          "unit": "万"
+        },
+        {
+          "label": "外卖配送费",
+          "value": 12,
+          "unit": "万"
+        },
+        {
+          "label": "其他",
+          "value": 8,
+          "unit": "万"
+        }
+      ],
+      "highlight": [
+        0,
+        2
+      ],
+      "steps": [
+        {
+          "title": "咖啡撑起==六成==营收"
+        },
+        {
+          "title": "咖啡饮品 386 万"
+        },
+        {
+          "title": "烘焙是第二增长点"
+        }
+      ]
+    },
+    {
+      "component": "radar",
+      "eyebrow": "门店对比",
+      "en": "Store Radar",
+      "title": "五角场输在体验",
+      "axes": [
+        "客流",
+        "转化",
+        "客单",
+        "复购",
+        "环境评分",
+        "出杯速度"
+      ],
+      "max": 100,
+      "series": [
+        {
+          "name": "五角场",
+          "values": [
+            72,
+            48,
+            66,
+            55,
+            41,
+            70
+          ]
+        },
+        {
+          "name": "五店平均",
+          "values": [
+            68,
+            62,
+            64,
+            58,
+            74,
+            66
+          ]
+        }
+      ],
+      "focus": 4,
+      "steps": [
+        {
+          "title": "五角场的六项得分"
+        },
+        {
+          "title": "和五店平均比"
+        },
+        {
+          "title": "差得最远的是==环境=="
+        }
+      ],
+      "takeaway": "先改座位和动线，再谈促销"
+    },
+    {
+      "component": "sankey",
+      "eyebrow": "营收流向",
+      "en": "Flow of Revenue",
+      "title": "钱主要从午市流走",
+      "unit": "万",
+      "headers": [
+        "全部营收",
+        "时段",
+        "渠道"
+      ],
+      "columns": [
+        [
+          {
+            "label": "季度营收"
+          }
+        ],
+        [
+          {
+            "label": "早市"
+          },
+          {
+            "label": "午市"
+          },
+          {
+            "label": "晚市"
+          }
+        ],
+        [
+          {
+            "label": "堂食"
+          },
+          {
+            "label": "外卖"
+          },
+          {
+            "label": "小程序自提"
+          }
+        ]
+      ],
+      "links": [
+        {
+          "from": "季度营收",
+          "to": "早市",
+          "value": 180
+        },
+        {
+          "from": "季度营收",
+          "to": "午市",
+          "value": 310
+        },
+        {
+          "from": "季度营收",
+          "to": "晚市",
+          "value": 150
+        },
+        {
+          "from": "早市",
+          "to": "堂食",
+          "value": 70
+        },
+        {
+          "from": "早市",
+          "to": "小程序自提",
+          "value": 110
+        },
+        {
+          "from": "午市",
+          "to": "外卖",
+          "value": 190
+        },
+        {
+          "from": "午市",
+          "to": "堂食",
+          "value": 90
+        },
+        {
+          "from": "午市",
+          "to": "小程序自提",
+          "value": 30
+        },
+        {
+          "from": "晚市",
+          "to": "堂食",
+          "value": 120
+        },
+        {
+          "from": "晚市",
+          "to": "外卖",
+          "value": 30
+        }
+      ],
+      "focus": "午市",
+      "steps": [
+        {
+          "title": "640 万按时段拆"
+        },
+        {
+          "title": "再按渠道拆"
+        },
+        {
+          "title": "午市六成走==外卖=="
+        }
+      ],
+      "takeaway": "外卖抽佣是午市利润最大的漏点"
+    },
+    {
+      "component": "forces",
+      "eyebrow": "行业格局",
+      "en": "Five Forces",
+      "title": "真正的压力来自买方",
+      "forces": {
+        "entrants": {
+          "title": "连锁品牌下沉",
+          "text": "两家头部今年开到五角场",
+          "level": "high"
+        },
+        "suppliers": {
+          "title": "咖啡豆供应稳定",
+          "text": "三家供应商可替换",
+          "level": "low"
+        },
+        "rivalry": {
+          "title": "同街区 9 家咖啡店",
+          "text": "价格带重叠在 18～28 元"
+        },
+        "buyers": {
+          "title": "顾客比价方便",
+          "text": "外卖平台一键比价，忠诚度低",
+          "level": "high"
+        },
+        "substitutes": {
+          "title": "便利店现磨",
+          "text": "9.9 元抢走早市刚需",
+          "level": "mid"
+        }
+      },
+      "steps": [
+        {
+          "title": "新进入者在加速"
+        },
+        {
+          "title": "供应商不是问题"
+        },
+        {
+          "title": "==买方==压力最大"
+        },
+        {
+          "title": "便利店抢早市"
+        },
+        {
+          "title": "结果是街区内价格战"
+        }
+      ],
+      "accent": "bad"
+    },
+    {
+      "component": "diamond",
+      "eyebrow": "改造方法",
+      "en": "Double Diamond",
+      "title": "先找对问题\n再找对方案",
+      "labels": [
+        "做对的事",
+        "把事做对"
+      ],
+      "phases": [
+        {
+          "text": "蹲店 3 天，记录 200 位顾客动线"
+        },
+        {
+          "text": "收敛成一句话：午后没有坐下的理由"
+        },
+        {
+          "text": "出 5 个方案：座位、甜品、会员日…"
+        },
+        {
+          "text": "选 2 个在五角场试 4 周"
+        }
+      ],
+      "steps": [
+        {
+          "title": "先去现场看"
+        },
+        {
+          "title": "把问题说成==一句话=="
+        },
+        {
+          "title": "方案先多出几个"
+        },
+        {
+          "title": "只挑两个去试"
+        }
+      ]
+    }
+  ]
+}

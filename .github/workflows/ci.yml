@@ -1,0 +1,82 @@
+name: 分发包检查
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]   # macOS 在发布者本机每轮回归都测
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '20'
+      - name: 校验五份示例、构建并检查临时安装
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import { cpSync, existsSync, mkdtempSync, readFileSync, rmSync, statSync } from 'node:fs';
+          import { spawnSync } from 'node:child_process';
+          import assert from 'node:assert/strict';
+          import os from 'node:os';
+          import path from 'node:path';
+          const repo = process.cwd();
+          const skill = path.join(repo, 'skills', 'winter-deck');
+          const temporary = mkdtempSync(path.join(os.tmpdir(), 'winter-deck-ci-'));
+          const work = path.join(temporary, '工作目录');
+          function run(script, args) {
+            const result = spawnSync(process.execPath, [script, ...args], { cwd: work, encoding: 'utf8', timeout: 120000 });
+            process.stdout.write(result.stdout || '');
+            process.stderr.write(result.stderr || '');
+            assert(!result.error, result.error?.message);
+            assert.equal(result.status, 0, '脚本运行失败：' + script);
+            return result.stdout;
+          }
+          try {
+            cpSync(path.join(skill, 'examples'), work, { recursive: true });
+            for (const name of ['mix-review', 'paper-sample', 'paper2-sample', 'paper3-sample', 'model-test']) {
+              const validated = run(path.join(skill, 'scripts', 'validate.mjs'), [name + '.json']);
+              assert(validated.includes('0 项失败'), '示例必须校验为零失败：' + name);
+              run(path.join(skill, 'scripts', 'build.mjs'), [name + '.json']);
+              const html = path.join(work, 'out', name + '.html');
+              assert(existsSync(html), '没有生成 HTML：' + name);
+              assert(statSync(html).size > 100 * 1024, 'HTML 必须大于 100KB：' + name);
+            }
+            const destination = path.join(temporary, '安装目录');
+            run(path.join(repo, 'install.mjs'), ['--dir', destination]);
+            const installed = path.join(destination, 'winter-deck');
+            assert(existsSync(path.join(installed, 'SKILL.md')), '安装后缺少 SKILL.md');
+            assert(existsSync(path.join(installed, 'scripts', 'build.mjs')), '安装后缺少构建脚本');
+            assert.equal(JSON.parse(readFileSync(path.join(installed, 'runtime', 'manifest.json'), 'utf8')).version,
+              JSON.parse(readFileSync(path.join(repo, 'package.json'), 'utf8')).version, '安装版本不一致');
+            console.log('五份示例与临时目录安装检查通过；未启动浏览器。');
+          } finally { rmSync(temporary, { recursive: true, force: true }); }
+          NODE
+      - name: Windows 浏览器冒烟（软件渲染：只查脚本报错、每一步能走到，不评画质）
+        # 很慢（无显卡软件渲染 10～30 分钟）：只在 GitHub 页面手动点"Run workflow"时跑，发版前跑一次
+        if: runner.os == 'Windows' && github.event_name == 'workflow_dispatch'
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import { cpSync, mkdtempSync, readFileSync } from 'node:fs';
+          import { spawnSync } from 'node:child_process';
+          import assert from 'node:assert/strict';
+          import os from 'node:os';
+          import path from 'node:path';
+          const skill = path.join(process.cwd(), 'skills', 'winter-deck');
+          const work = mkdtempSync(path.join(os.tmpdir(), 'winter-deck-win-'));
+          cpSync(path.join(skill, 'examples'), work, { recursive: true });
+          const run = (s, a) => spawnSync(process.execPath, [path.join(skill, 'scripts', s), ...a], { cwd: work, encoding: 'utf8', timeout: 1800000 });   // 无显卡的测试机很慢，给足 30 分钟
+          assert.equal(run('build.mjs', ['paper2-sample.json']).status, 0, '打包失败');
+          const snap = run('snap.mjs', ['out/paper2-sample.html', '--check', '--out', 'out/check', '--settle', '3']);
+          process.stdout.write(snap.stdout || ''); process.stderr.write(snap.stderr || '');
+          const report = JSON.parse(readFileSync(path.join(work, 'out', 'check', 'report.json'), 'utf8'));
+          const codes = [...(report.findings || []), ...(report.steps || []).flatMap((s) => s.findings || [])].map((f) => f.code);
+          console.log('浏览器：', report.gpu?.unmaskedRenderer || report.gpu?.renderer, '；步数：', report.steps?.length, '；问题代码：', [...new Set(codes)].join(','));
+          assert(!codes.includes('page-errors') && !codes.includes('err-element') && !codes.includes('runtime-error'), '页面有脚本报错');
+          assert.equal(report.steps.length, report.stepCount, '有步骤没走到');
+          assert(!codes.includes('cleanup-process') && !codes.includes('cleanup-tree-unverified'), '截图结束后浏览器进程没有确认全部退出');
+          NODE

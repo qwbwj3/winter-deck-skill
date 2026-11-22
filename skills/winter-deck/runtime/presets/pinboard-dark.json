@@ -1,0 +1,102 @@
+{
+  "id": "pinboard-dark",
+  "name": "便签拼贴 · 深色",
+  "_source": "原创版式与渲染；仅借鉴任务指定参考图的视觉思路。",
+  "colors": {
+    "bg": "#302A24",
+    "surface": "#302A24",
+    "surface2": "#393127",
+    "sep": "#D5C8AE",
+    "ink": "#FFF4DE",
+    "muted": "#D5C8AE",
+    "dim": "#D5C8AE",
+    "neutral": "#D5C8AE",
+    "ok": "#C9D9B0",
+    "bad": "#F1B9B1",
+    "accent": "#FFD08C",
+    "quiet": "#D5C8AE",
+    "ghost": "#D5C8AE",
+    "target": "#FFD08C",
+    "grid": "#D5C8AE",
+    "ring": "#FFD08C",
+    "spot": "#302A24",
+    "dust": "#D5C8AE",
+    "shadow": "rgba(0,0,0,.24)",
+    "badSoft": "rgba(0,0,0,.08)",
+    "okName": "浅绿色",
+    "badName": "浅粉色"
+  },
+  "material": {
+    "color": "#FFF1CB",
+    "metalness": 0,
+    "roughness": 1,
+    "clearcoat": 0,
+    "rim": 0,
+    "sheen": 0,
+    "base": 0,
+    "grad": 0,
+    "glow": 0,
+    "capBoost": 1,
+    "tint": 1,
+    "emis": 0
+  },
+  "floor": {
+    "color": "#302A24",
+    "metalness": 0,
+    "roughness": 1,
+    "reflection": 0,
+    "grid": 0,
+    "ring": 0,
+    "spot": 0,
+    "env": 0,
+    "mode": "matte"
+  },
+  "light": {
+    "env": 0.85,
+    "key": "#FFFFFF",
+    "keyIntensity": 2.2,
+    "exposure": 1,
+    "fog": 0,
+    "vignette": 0,
+    "textMask": 0,
+    "shadows": true,
+    "toneMapping": "none",
+    "ink": false
+  },
+  "bloom": {
+    "strength": 0,
+    "radius": 0.3,
+    "threshold": 1
+  },
+  "image": {
+    "grade": 0.0,
+    "shotDim": 1.0
+  },
+  "motion": {
+    "camK": 9,
+    "barK": 70,
+    "barZ": 0.64,
+    "dust": 0
+  },
+  "type": {
+    "titleSize": 80,
+    "titleWeight": 900
+  },
+  "scheme": "dark",
+  "family": "pinboard",
+  "familyName": "便签拼贴",
+  "shape": {
+    "radius": 3,
+    "chipRadius": 3
+  },
+  "render": {
+    "direction": "collage",
+    "paper": true
+  },
+  "camera": {
+    "fov": 24,
+    "tilt": 0.2
+  },
+  "compose": "pinboard",
+  "baseFamily": "collage"
+}
