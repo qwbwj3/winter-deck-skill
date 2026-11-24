@@ -95,6 +95,7 @@ export function runCli(args) {
     writeFileSync(stamp, JSON.stringify({ fingerprint: fingerprint(deck), deck: input, builtAt: new Date().toISOString() }, null, 2) + '\n');
     console.log('打包完成：' + out + '（' + Math.round(Buffer.byteLength(html) / 1024) + ' KiB）；' + fonts.note);
     console.log('实际产物：' + path.resolve(out));
+    console.log('【放映兼容提醒】3D 页面需播放机浏览器支持 WebGL 2 并开启图形/硬件加速（Chrome / Edge）；老旧电脑、关闭硬件加速或部分远程桌面（VDI）可能无法渲染且不会自动降级为 2D PPT。拷到别的电脑或会议室上台前请务必先试播并连续翻页，略卡按 Q 降画质（可用 chrome://gpu 或 edge://gpu 检查 WebGL2 状态）。');
     console.log('下一步截图：node ' + JSON.stringify(path.join(SKILL, 'scripts', 'snap.mjs')) + ' ' + JSON.stringify(path.resolve(out)) + ' --check');
     return 0;
   } catch (error) { console.error('打包失败：' + error.message); return 1; }

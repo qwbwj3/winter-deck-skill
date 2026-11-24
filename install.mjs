@@ -88,7 +88,14 @@ function main(args) {
     console.log('备份位置：' + backups + (existsSync(backups) ? '（仅保留最近 3 份）' : '（尚无备份；升级时仅保留最近 3 份）'));
     console.log('已安装：' + target);
   }
-  if (!uninstall) console.log('对你的 Agent 说：用 winter-deck 帮我把这份材料做成演示');
+  if (!uninstall) {
+    console.log('对你的 Agent 说：用 winter-deck 帮我把这份材料做成演示');
+    console.log('');
+    console.log('【重要提醒｜播放机 WebGL 2 兼容性】');
+    console.log('- 本 Skill 导出的 3D HTML 演示依赖播放机浏览器的 WebGL 2 与图形加速（推荐最新版 Chrome / Edge）。');
+    console.log('- 老旧电脑（老集显/旧驱动）、关闭硬件加速的浏览器、或部分远程桌面/云桌面（VDI）可能无法渲染，且不会自动退化成普通 2D PPT。');
+    console.log('- 拷到别的电脑或会议室上台前，务必先在目标播放机试播一页 3D 图表并连续翻页；能打开但略卡可按 Q 降画质（地址栏输 chrome://gpu 或 edge://gpu 可查 WebGL2 状态）。');
+  }
 }
 try { main(process.argv.slice(2)); }
 catch (error) { console.error('操作失败：' + error.message); process.exitCode = 1; }

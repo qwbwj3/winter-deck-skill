@@ -2,6 +2,9 @@
 
 [中文说明、安装与用法](README.md)
 
+> [!IMPORTANT]
+> **Playback Compatibility (WebGL 2 Required):** 3D slides render live via **WebGL 2** in Chrome or Edge with hardware/graphics acceleration enabled. Older PCs (legacy GPUs/drivers), browsers with hardware acceleration disabled, or GPU-restricted VDI/remote desktops may fail to launch and will **not** automatically fall back to a static 2D deck. Always test your exported HTML on the actual presentation machine beforehand (`chrome://gpu` → `WebGL2: Hardware accelerated`), and press **Q** to lower 3D quality if playback feels sluggish.
+
 ## 4 styles, each in dark and light
 
 | Style | Composition | Best for | Preset IDs |
